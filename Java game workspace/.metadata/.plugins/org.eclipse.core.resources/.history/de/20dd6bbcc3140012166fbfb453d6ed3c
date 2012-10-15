@@ -1,0 +1,8 @@
+package com.pp.azteroids.frame;
+
+public class main {
+
+	void InitializeFrame(int Width, int Height){
+		JFrame frame 
+	} 
+}

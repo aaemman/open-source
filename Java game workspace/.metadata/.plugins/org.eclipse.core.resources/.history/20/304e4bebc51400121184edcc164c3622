@@ -1,0 +1,28 @@
+package com.pp.azteroids.frame;
+
+import javax.swing.JFrame;
+
+public class Frame {
+	
+	String frameTitle = "Azteroids - Alpha 0.001";
+	int frameWidth = 700;
+	int frameHeight = 365;
+	boolean frameVisible = true;
+	boolean frameResizeable = false;
+	
+	public Frame() {
+		JFrame frame = new JFrame();
+		//frame.add(new Background());
+		frame.setTitle(frameTitle);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(frameWidth, frameHeight);
+		frame.setResizable(frameResizeable);
+		frame.setVisible(frameVisible);
+		
+	}
+	
+	public static void main(String[] args){
+		
+		new Frame();
+	}
+}

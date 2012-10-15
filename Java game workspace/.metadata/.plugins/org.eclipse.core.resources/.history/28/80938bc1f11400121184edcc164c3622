@@ -1,0 +1,11 @@
+package com.pp.azteroids.player;
+
+public class Player {
+	int x, dx, y;
+	Image
+	public Player(){
+		ImageIcon i = new ImageIcon("player1.png");
+		
+	}
+
+}

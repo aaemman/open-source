@@ -1,0 +1,12 @@
+package com.pp.azteroids.frame;
+
+import java.awt.Canvas;
+
+public class Background extends Canvas {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

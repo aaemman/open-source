@@ -1,0 +1,14 @@
+package com.pp.azteroids.frame;
+
+import java.awt.Color;
+
+import javax.swing.JPanel;
+
+public class Background extends JPanel {
+
+	
+	public Background(){
+		setFocusable(true);
+		
+	}
+}

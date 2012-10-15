@@ -1,0 +1,20 @@
+package com.pp.azteroids.frame;
+
+import java.awt.Color;
+
+import javax.swing.JPanel;
+
+public class Background extends JPanel {
+
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public Background(){
+		setFocusable(true);
+		
+		
+	}
+}

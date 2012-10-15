@@ -1,0 +1,67 @@
+package com.pp.azteroids.player;
+
+import java.awt.Image;
+import java.awt.event.KeyEvent;
+
+import javax.swing.ImageIcon;
+
+public class Player {
+	int x, dx, y, dy;
+	Image playerImage;
+
+	public Player() {
+		ImageIcon i = new ImageIcon("C:/Users/Public/Documents/courses/Third-Year/Sysc-3010/Term-Project/team02/Java game workspace/Azteroids/Res/Images/background.png");
+		playerImage = i.getImage();
+		x = 10;
+		y = 172;
+
+	}
+
+	public void keyPressed(KeyEvent e){
+		int key = e.getKeyCode();
+		
+		if(key == KeyEvent.VK_LEFT){
+			dx = -1;
+		}
+		
+		if(key == KeyEvent.VK_RIGHT){
+			dx = 1;
+		}
+		
+		if(key == KeyEvent.VK_UP){
+			dy = -1;
+		}
+		
+		if(key == KeyEvent.VK_DOWN){
+			x = 0;
+			dx = 0;
+			y = 0;
+			dy = 0;
+		}
+		
+		
+	}
+
+	public void keyReleased(KeyEvent e) {
+		int key = e.getKeyCode();
+
+	}
+
+	public void move() {
+		x = x + dx;
+		y = y + dy;
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public Image getPlayerImage() {
+		return playerImage;
+
+	}
+}

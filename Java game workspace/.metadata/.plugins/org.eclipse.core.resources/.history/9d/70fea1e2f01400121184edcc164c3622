@@ -1,0 +1,22 @@
+package com.pp.azteroids.frame;
+
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+
+import com.pp.azteroids.player.Player;
+
+public class Background extends JPanel {
+
+	Player p;
+	Image img;
+	
+	public Background(){
+		p = new Player();
+		setFocusable(true);
+		ImageIcon i = new ImageIcon("background.png");
+		
+		
+	}
+}

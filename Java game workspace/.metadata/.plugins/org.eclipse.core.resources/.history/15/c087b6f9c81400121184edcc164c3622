@@ -1,0 +1,12 @@
+package com.pp.azteroids.main;
+
+import com.pp.azteroids.frame.Frame;
+
+public class Azteroids {
+	
+	public static void main (String[] args){
+		
+		new Frame();
+	}
+
+}

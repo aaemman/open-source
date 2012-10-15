@@ -1,0 +1,29 @@
+package com.pp.azteroids.frame;
+
+import javax.swing.JFrame;
+
+public class Frame {
+	
+	//Start of Global Frame Variables
+	String frameTitle = "Azteroids - Alpha 0.001";
+	int frameWidth = 700;
+	int frameHeight = 365;
+	boolean frameVisible = true;
+	boolean frameResizeable = false;
+	
+	//End of Global Frame Variables
+	
+	
+	public Frame() {  //Main Frame Constructor
+		JFrame frame = new JFrame();
+		frame.add(new Background());
+		frame.setTitle(frameTitle);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Very important, ensures the athe process terminates when the panel is closed
+		frame.setSize(frameWidth, frameHeight);
+		frame.setResizable(frameResizeable);
+		frame.setLocationRelativeTo(null); // allows the window to start up in the center of the screen instead of left corner
+		frame.setVisible(frameVisible);
+		
+	}
+	
+}
